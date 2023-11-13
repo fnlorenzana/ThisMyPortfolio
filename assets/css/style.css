@@ -322,7 +322,6 @@ from, to {
     width: 40%;
     height: auto;
     pointer-events: none;
-    max-width: 40%;
 
 }
   
@@ -330,6 +329,13 @@ from, to {
 @media only screen and (max-width: 768px) {
     .home .overlay {
         display: none;
+    }
+
+}
+
+@media only screen and (min-width: 1440px) {
+    .home .home-img img{
+        width: 40%;
     }
 
 }
