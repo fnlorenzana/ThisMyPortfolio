@@ -142,28 +142,27 @@ background-color: var(--bg-color);
     white-space: nowrap;
     margin: 0;
     letter-spacing: 2px;
-    animation: typing 3s steps(30,end), blink-caret 0.5s step-end infinite;
+    animation: typing 3s steps(20,end), blink-caret 1s step-end infinite;
   }
   
-  @keyframes typing {
-    from {
-      width: 0;
-    }
-    to {
-      width: 100%;
-    }
-  }
-  
-  @keyframes blink-caret {
-    from, to {
-      border-color: transparent;
-    }
-    50% {
-      border-color: white;
-    }
-  }
-  
+@keyframes typing {
+from {
+    width: 0;
+}
+to {
+    width: 100%;
+}
+}
 
+@keyframes blink-caret {
+from, to {
+    border-color: transparent;
+}
+50% {
+    border-color: white;
+}
+}
+  
 .home .home-content .social-media a {
     display: inline-flex;
     justify-content: center;
@@ -193,7 +192,6 @@ background-color: var(--bg-color);
     border: 2px solid var(--glow-color);
     position: absolute;
     bottom: 30px;
-    left: 85px;
     border-radius: 50px;
     cursor: pointer;   
 }
@@ -317,13 +315,15 @@ background-color: var(--bg-color);
     border-bottom: 430px solid var(--main-color);
     border-left: 430px solid transparent;
 }
-.home-img img{
-    display: flex;
+.home .home-img img{
     position: absolute;
-    /* right: 110px; */
-    width: 30%;
+    bottom: 0;
+    right: 110px;
+    width: 40%;
     pointer-events: none;
+
 }
+  
 
 @media only screen and (max-width: 768px) {
     .home .overlay {
@@ -337,9 +337,8 @@ background-color: var(--bg-color);
 --------------------------------------------------------------*/
 .about-me{
     min-height: 100vh;
-
 }
-.about-me .section-2 img{
+.about-me .section-2 .my-img{
     border: 2px solid var(--main-color);
     box-shadow: 0 0 5px var(--main-color),
                 0 0 25px var(--main-color);
@@ -350,20 +349,21 @@ background-color: var(--bg-color);
     top: 115%;
     transition: 0.5 ease;
     border-radius: 40px;
+    background-color: rgb(21, 21, 21);
 
 }
 .section-2 .my-img{
-    z-index: 1;
+    z-index: 7;
 }
 .section-2 .my-img .icon-inside-img{
     position: absolute;
-    top: 170%;
+    /* top: 170%;
     left: 5%;
     transform: translate(50%, 50%);
-    background-color: rgba(0, 0, 0,);
+    background-color: rgb(0, 0, 0);
     z-index: 1;
     border-radius: 10px;
-    padding-left: 10px;
+    padding-left: 10px; */
 
 }
 .social-media-b a{
@@ -386,12 +386,12 @@ background-color: var(--bg-color);
     background: var(--glow-color);
     color: var(--white-color);
 }
-.section-2{
+/* .section-2{
     min-height: 100vh;
     padding:1.5rem 7% 2rem;
     display: inline-block;
     justify-content: space-between;
-}
+} */
 .about-me-text{
     position: absolute;
     top: 155%;
