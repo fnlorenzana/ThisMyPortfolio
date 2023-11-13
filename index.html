@@ -1,77 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
+        <meta charset="utf-8">
         <meta http-equiv="X-UA_Compatible" content="IE-edge">
-        <meta name="viewport" content="width= device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>ZorenX Portfolio</title>
-        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <meta name="description" content="Portfolio of Francis Emmanuel Zoren Lorenzana">
+        <meta name="author" content="fnlorenzana">
+        <meta property="og:title" content="ZorenX Portfolio" />
+        <meta property="og:description" content="Portfolio of Francis Emmanuel Zoren Lorenzana" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="assets/img/my-portrait.png" />
+        <meta property="og:url" content="https://fnlorenzana.github.io" />
+        <meta property="og:site_name" content="ZorenX Portfolio" />
+
+        <!-- ESSENTIAL LIBRARIES -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Agbalumo&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="style.css">
+        <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Agbalumo&display=swap">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!-- MY STYLES -->
+        <link rel="stylesheet" href="assets/css/style.css">
     </head>
     <body>
+        <!-- ======= Header ======= -->
         <header class="header">
             <a href="#" class="logo">Portfolio.</a>
-
             <nav class="navbar">
-                <a href="#home" class="active">Home</a>
-                <a href="#about-me">About</a>
-                <a href="#portfolio">Portfolio</a>
-                <a href="#contact">Contact</a>
-                
+                <a href="#home" class="nav-link scrollto active">Home</a>
+                <a href="#about-me" class="nav-link scrollto">About</a>
+                <a href="#portfolio" class="nav-link scrollto">Portfolio</a>
+                <a href="#contact" class="nav-link scrollto">Contact</a>
             </nav>
+            <!-- Switch Light/Dark Mode -->
             <div class="bx bx-moon" id="darkMode-icon"></div>
-        </header>
+        </header><!-- End of Header -->
 
+        <!-- ======= Home ======= -->
         <section class="home" id="home">
             <div class="home-content">
                 <h3>Hello, I am</h3>
-                <div class="h3-glow">
-                <h1 data-text="Lorenzana,">Lorenzana, Francis</h1>
-            </div>
-            <p style="font-family: Agbalumo;"> A Computer Science student</p>
-            <div class="social-media">
-                <a href="https://www.facebook.com/francis.lorenzana.562/" target="blank"><i class='bx bxl-facebook'></i></a>
-                <a href="#"><i class='bx bxl-linkedin' ></i></a>
-                <a href="#"><i class='bx bxl-gmail' ></i></a>
-                <a href="#"><i class='bx bxl-instagram-alt' ></i></a>
+                <div class="h3-glow"><h1 data-text="Lorenzana,">Lorenzana, Francis</h1></div>
+                <p style="font-family: Agbalumo;"> A Computer Science student</p>
+                <div class="social-media">
+                    <a href="https://www.facebook.com/francis.lorenzana.562/" target="blank"><i class='bx bxl-facebook'></i></a>
+                    <a href="#"><i class='bx bxl-linkedin' ></i></a>
+                    <a href="#"><i class='bx bxl-gmail' ></i></a>
+                    <a href="#"><i class='bx bxl-instagram-alt' ></i></a>
                 </div>
+            </div>
 
-                <a class="scroll-down" href="#about-me"></a>
             <div class="profession-container">
                 <div class="profession-box">
-                    <div class="profession" style="--i:0;">
-                        <i class='bx bx-code-alt' ></i>
-                        <h3>Programmer</h3>
-                    </div>
-                    <div class="profession" style="--i:1;">
-                        <i class='bx bx-math' ></i>
-                        <h3>Math Enthusiast</h3>
-                    </div>
-                    <div class="profession" style="--i:3;">
-                            <i class='bx bx-math' ></i>
-                        <h3>Technopile</h3>
-                    </div>
-
-                    <div class="circle">
-                    </div>
-
-                    </div>
+                    <div class="profession" style="--i:0;"><i class='bx bx-code-alt' ></i><h3>Programmer</h3></div>
+                    <div class="profession" style="--i:1;"><i class='bx bx-math' ></i><h3>Math Enthusiast</h3></div>
+                    <div class="profession" style="--i:2;"><i class='bx bx-terminal' ></i><h3>Technophile</h3></div>
+                    <div class="profession" style="--i:3;"><i class='bx bx-code-block' ></i><h3>AI Dev (aspiring)</h3></div>
+                    <div class="circle"></div>
                 </div>
-               <div class="overlay"></div>
+                <div class="overlay"></div>
             </div>
             <div class="home-img">
-                    <img src="homeimg.png" alt="">
-                </div>
-                </div>
-        </section>
+                <img src="assets/img/my-portrait-home.png" alt="">
+            </div>
+            <a class="scroll-down" href="#about-me"></a>
+        </section><!-- End of Home -->
 
+        <!-- ======= About ======= -->
         <section class="about-me" id="about-me">
             <div class="section-2">
                 <div class="my-img">
-                    <img src="pogi.png" alt="">
+                    <img src="assets/img/pogi.png" alt="">
                     <div class="icon-inside-img social-media-b">
                         <a href="https://www.facebook.com/francis.lorenzana.562/" target="blank"><i class='bx bxl-facebook'></i></a>
                         <a href="#"><i class='bx bxl-linkedin' ></i></a>
@@ -123,10 +124,13 @@
                     </div>
 
             </div>
-        </section>
+        </section><!-- End of About -->
 
-        <script src="script.js"></script>
+        <!-- MY JAVASCRIPT -->
+        <script src="assets/js/main.js"></script>
+        <script src="assets/js/utils.js"></script>
 
+        <!-- ESSENTIAL JAVASCRIPT BUNDLES -->
 
     </body>
 </html>

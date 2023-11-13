@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
 * {
     margin: 0;
     padding: 0;
@@ -10,7 +13,6 @@
     scroll-behavior: smooth;
     font-family: 'Poppins', sans-serif;
 }
-
 :root {
     --bg-color: #fdfdfd;
     --text-color: #333;
@@ -22,36 +24,41 @@
 
 }
 .html{
-    font-size:68%;
+    font-size: 16px;
     overflow-x: hidden;
 
 }
-
 body{
-    background: #171b1f;
+    background: #161A1C;
     color: var(--white-color);
 }
+
+/*--------------------------------------------------------------
+# Header and Navbar
+--------------------------------------------------------------*/
 .header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 2 rem 7%;
+    padding: 20px;
     display: flex;
     align-items: center;
     z-index: 100;
-    background-color: #212121;
-    padding: 10px;
-    opacity: 0.8;
+    background-color: #0d0000;
+    /* opacity: 0.8; */
     
 }
-.logo {
+.header .logo {
     font-size: 1.8rem;
     color: var(--main-color);
     font-weight: 500;
-    cursor: default;
+    /* cursor: default; */
     margin-right: auto;
-
+    letter-spacing: 2px;
+}
+.header a:hover {
+    color: var(--glow-color);
 }
 .navbar a{
     position: relative;
@@ -60,61 +67,72 @@ body{
     font-weight: 500;
     margin-right: 3.5rem;
 }
-.navbar a.active::before {
-    content: '';
+/* .navbar a.active::before {
     position: absolute;
     left: 0;
     bottom: -6px;
     width: 100%;
     height: .2rem;
     background: var(--white-color);
+} */
+.navbar a:hover,
+.navbar .active,
+.navbar .active:focus{
+  color: var(--glow-color);
 }
-
 #darkMode-icon{
     font-size: 2.4rem;
     color: var(--white-color);
     cursor: pointer;
-
 }
 
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
 section{
     min-height: 100vh;
     padding:7rem 7% 2rem;
+    overflow: hidden;
 
 }
 
+.section-bg {
+background-color: #fef8f5;
+}
+
+
+/*--------------------------------------------------------------
+# Home
+--------------------------------------------------------------*/
 .home{
     display: flex;
     align-items: center;
-    background-image: url(crop3.gif);
+    background-image: url(../img/home-background.gif);
     background-position: 20px;
     background-size: contain;
     background-repeat: no-repeat;
+    margin: 72px 0 -72px 0;
 }
-
 .home .home-content {
     max-width: 44rem;
 }
-
-.home-content h3{
+.home .home-content h3{
     font-size: 2.5rem;
     font-weight: 700;
     line-height: 1.0;
 }
-.home-content .h3-glow h1{
+.home .home-content .h3-glow h1{
     font-size: 3.5rem;
     font-weight: 700;
     color: white;
     text-shadow: 0 0 35px var(--main-color);
     -webkit-text-stroke: 0.2rem var(--glow-color);
 }
-
-.home-content p{
+.home .home-content p{
     font-size: 1.5rem;
 
 }
-
-.home-content .social-media a {
+.home .home-content .social-media a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -129,18 +147,15 @@ section{
     text-shadow: 0 0 20px var(--glow-color);
     box-shadow: 0 0 1px var(--glow-color);
     margin: 1.0rem 0.8rem 1rem 0;
-
-
 }
 
-.home-content .social-media a:hover {
+.home .home-content .social-media a:hover {
     background: var(--glow-color);
     color: var(--white-color);
-
-
 }
 
-.scroll-down{
+/* Scroll down */
+.home .scroll-down{
     height: 80px;
     width: 50px;
     border: 2px solid var(--glow-color);
@@ -148,10 +163,9 @@ section{
     bottom: 30px;
     left: 85px;
     border-radius: 50px;
-    cursor: pointer;
-       
+    cursor: pointer;   
 }
-.scroll-down::after{
+.home .scroll-down::after{
     content: "";
     position: absolute;
     top: 20%;
@@ -163,10 +177,8 @@ section{
     border-top: transparent;
     border-left: transparent;
     animation: scroll-down 1s ease-in-out infinite;
-  
 }
-
-.scroll-down::after{
+.home .scroll-down::after{
     top: 20%;
 }
 @keyframes scroll-down{
@@ -183,7 +195,9 @@ section{
         opacity: 0;
         top: 70%;
     }
-    }
+}
+
+/* Professions */
 .home .profession-container {
     position: absolute;
     top: 50%;
@@ -194,41 +208,35 @@ section{
     overflow: hidden;
     pointer-events: none;
 }
-
 .home .profession-container .profession-box {
     position: absolute;
     top: 0;
     right: 0;
     width: 900px;
     height: 900px;
-    border-radius: 50%;
+    /* border-radius: 50%; */
     display: flex;
     justify-content: center;
     align-items: center;
-    animation:professionRotate 13s ease-out infinite;
-
-
+    animation: professionRotate 13s ease-out infinite;
 }
-
 @keyframes professionRotate {
-    0%,25%{
+    0%,20%{
         transform: rotate(0deg);
     }
     25%,45%{
         transform: rotate(-90deg);
     }
-    50%,75%{
+    50%,70%{
         transform: rotate(-180deg);
     }
     75%,95%{
         transform: rotate(-270deg);
     }
     100%{
-        transform: rotate(-360eg);
+        transform: rotate(-360deg);
     }
-
 }
-
 .home .profession-box .profession {
     position: absolute;
     left: 0;
@@ -239,44 +247,33 @@ section{
     color: var(--glow-color);
     text-shadow:0 0 20px var(--glow-color);
     transform: rotate(calc(360deg / 4 * var(--i)));
-    transform-origin: 384px;
+    transform-origin: 450px;
     background: #171b1f;
     border-radius: 20px;
     border: solid var(--glow-color);
     padding: 10px;
 }
-
-.home .profession-box .profession:nth-child(1) i{
+/* .home .profession-box .profession:nth-child(1) i{
     margin-right: 10px;
-
 }
-
 .home .profession-box .profession:nth-child(2),
 .home .profession-box .profession:nth-child(4) {
     padding-bottom: 20px;
-}
-
-
-
+} */
 .home .profession i {
      font-size: 1.5rem;
 } 
-
 .home .profession h3 {
     font-size: 1.2rem;
     line-height: 1;
-    font-weight: 600;
-    
+    font-weight: 600;  
 }
-
 .home .profession-box .circle{
     width: 740px;
     height: 740px;
     border: 3px solid var(--glow-color);
     border-radius: 50%;
-
 }
-
 .home .overlay{
     position: absolute;
     top: 0;
@@ -287,17 +284,19 @@ section{
     border-right: 430px solid var(--main-color);
     border-bottom: 430px solid var(--main-color);
     border-left: 430px solid transparent;
-
 }
-
 .home-img img{
     position: absolute;
     bottom: 0;
     right: 110px;
     width: 40%;
     pointer-events: none;
-
+    margin-top: 50px;
 }
+
+/*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
 .about-me{
     min-height: 100vh;
 
@@ -341,7 +340,7 @@ section{
     box-shadow: 0 .2rem .5rem var(--glow-color);
     font-size: 1.7rem;
     color: var(--glow-color);
-    text-shadow: 0 0 20px var(--glow-color));
+    text-shadow: 0 0 20px var(--glow-color);
     margin: 0.5rem 1.5rem 1rem 0;
 
 }
