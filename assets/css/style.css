@@ -320,7 +320,9 @@ from, to {
     bottom: 0;
     right: 110px;
     width: 40%;
+    height: auto;
     pointer-events: none;
+    max-width: 40%;
 
 }
   
