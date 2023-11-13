@@ -112,7 +112,7 @@ background-color: var(--bg-color);
     align-items: center;
     background-image: url(../img/home-background.gif);
     /* background-position: 20px; */
-    /* background-size: contain; */
+    background-size: contain;
     /* background-repeat: no-repeat; */
     margin: 72px 0 -72px 0;
 }
