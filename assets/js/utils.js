@@ -110,3 +110,13 @@
     });
   
   })()
+
+// Typing Animation
+document.addEventListener('DOMContentLoaded', function() {
+  animateTyping();
+});
+
+function animateTyping() {
+  var typingElement = document.getElementById('typing-text');
+  typingElement.classList.add('typing');
+}
