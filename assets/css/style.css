@@ -405,8 +405,8 @@ from, to {
 } */
 .about-me-text{
     position: absolute;
-    top: 155%;
-    right: 100px;
+    top: 145%;
+    right: 150px;
     transform: translateY(-50%);
     width: 700px;
     height: 700px;
